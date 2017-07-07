@@ -1,0 +1,498 @@
+<header class="main-header wow animated bounceInDown">
+	<div class="container main-header__container align-flex between">
+		<a href="/">alom</a>
+		<nav class="main-nav">
+			<a href="#nav-wrap">Docs</a>
+			<a href="https://github.com/IcaliaLabs/alom" target="_blank">Github</a>
+		</nav>
+	</div>
+</header>
+<div class="container text-center">
+	<section class="main-section">
+		<div class="wow animated fadeIn">
+			<h3>alom</h3>
+			<h1>The lightest, simplest framework ever.</h1>
+		</div>
+		<div class="row">
+			<div class="col-4 wow animated fadeIn" data-wow-delay=".3s">
+				<img class="icons" src="images/fast-icon.png" alt="">
+				<h4>Super fast, like the speed of light</h4>
+			</div>
+			<div class="col-4 wow animated fadeIn" data-wow-delay=".6s">
+				<img class="icons" src="images/grid-icon.png" alt="">
+				<h4>Super simple responsive grid</h4>
+			</div>
+			<div class="col-4 wow animated fadeIn" data-wow-delay=".9s">
+				<img class="icons" src="images/non-style.png" alt="">
+				<h4>It doesn’t interfere with your style.</h4>
+			</div>
+		</div>
+	</section>
+
+	<div class="nav-wrap" id="nav-wrap">
+		<nav class="secondary-nav">
+			<a href="#grid">Grid</a>
+			<a href="#functions">Functions</a>
+			<a href="#utilities">Utility Classes</a>
+			<a href="#media-queries">Media Queries</a>
+			<a href="#responsive">Responsive</a>
+			<a href="#download">Download</a>
+		</nav>
+	</div>
+
+	<section class="grid" id="grid">
+		<h3 class="title">The grid</h3>
+		<p>We use Furattos'fluid system which scales up to 12 columns. You don't need much to start it up, the only thing you need to do is to nest each column (.col-1, .col-2, etc.) inside a div with class ".row".</p>
+		<p>You can algo nest rows inside existing .col-* columns.</p>
+		<div class="row">
+			<div class="col-4">
+				<div class="docs-col"><h4>4</h4></div>
+			</div>
+			<div class="col-8">
+				<div class="docs-col"><h4>8</h4></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="docs-col"><h4>4</h4></div>
+			</div>
+			<div class="col-4">
+				<div class="docs-col"><h4>4</h4></div>
+			</div>
+			<div class="col-4">
+				<div class="docs-col"><h4>4</h4></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+			<div class="col-1">
+				<div class="docs-col"><h4>1</h4></div>
+			</div>
+		</div>
+
+		<h3 class="title">The flex grid</h3>
+		<p>We also included a grid system based on flex, it's pretty much the same thing, the only difference is that it uses display flex instead of floating the element to the left.</p>
+		<div class="row-flex">
+			<div class="col-6">
+				<div class="docs-col"><h4>6</h4></div>
+			</div>
+			<div class="col-6">
+				<div class="docs-col"><h4>6</h4></div>
+			</div>
+		</div>
+		<div class="row-flex">
+			<div class="col-4">
+				<div class="docs-col"><h4>4</h4></div>
+			</div>
+			<div class="col-4">
+				<div class="docs-col"><h4>4</h4></div>
+			</div>
+			<div class="col-4">
+				<div class="docs-col"><h4>4</h4></div>
+			</div>
+		</div>
+		<div class="row-flex">
+			<div class="col-3">
+				<div class="docs-col"><h4>3</h4></div>
+			</div>
+			<div class="col-3">
+				<div class="docs-col"><h4>3</h4></div>
+			</div>
+			<div class="col-3">
+				<div class="docs-col"><h4>3</h4></div>
+			</div>
+			<div class="col-3">
+				<div class="docs-col"><h4>3</h4></div>
+			</div>
+		</div>
+
+		<h3 class="title">Offsets on columns</h3>
+		<p>Probably you will want to add some offset the columns of the grid, to put it more to the right, don't worry we have you covered.
+		Let us explain this thing works. In a case where want blank space between columns, the fair solution was to add some blank columns actually, that is not necessary with the offsets though. Offset will add a margin to the left according to the 12 column grid Furatto offers.</p>
+		<div class="row">
+			<div class="offset-4">
+				<div class="docs-col"><h4>Offset 4</h4></div>
+			</div>
+			<div class="offset-3">
+				<div class="docs-col"><h4>Offset 3</h4></div>
+			</div>
+			<div class="offset-2">
+				<div class="docs-col"><h4>Offset 2</h4></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="functions" id="functions">
+		<h3 class="title">Functions</h3>
+		<p>We have functions to help you make the responsive side even more easy.</p>
+
+		<h3 class="subtitle text-left">Pixels to rems</h3>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>px-to-rems($value)</h4>
+				<p>With this function you convert the pixels to rems, to make it easier on the responsive side, you can change the default value in the variables scss.</p>
+			</div>
+			<div class="col-6">
+				<div class="example-col text-left">
+					<h4>
+						body { <br>
+			    		<span>font-size: px-to-rems(16);</span><br>
+						}
+					</h4>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="subtitle text-left">Pixels to ems</h3>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>px-to-ems($value)</h4>
+				<p>Just like the rems functions, just with ems.</p>
+			</div>
+			<div class="col-6">
+				<div class="example-col text-left">
+					<h4>
+						body { <br>
+			    		<span>font-size: px-to-ems(16);</span><br>
+						}
+					</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="utilities" id="utilities">
+		<h3 class="title">Utility Classes</h3>
+		<p>We added some simple and functional class names for behavior tweaks.</p>
+
+		<h3 class="subtitle text-left">Floating elements</h3>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.pull-left</h4>
+				<p>This floats an element to the left.</p>
+			</div>
+			<div class="col-6">
+				<h4>.pull-right</h4>
+				<p>This floats an element to the right.</p>
+			</div>
+		</div>
+		<h3 class="subtitle text-left">Text Alignments</h3>
+		<div class="row text-left">
+			<div class="col-4">
+				<h4>.text-left</h4>
+				<p>This aligns the text to the left.</p>
+			</div>
+			<div class="col-4">
+				<h4>.text-right</h4>
+				<p>This aligns the text to the right.</p>
+			</div>
+			<div class="col-4">
+				<h4>.text-justify</h4>
+				<p>This aligns the text to be justify.</p>
+			</div>
+		</div>
+		<div class="row text-left">
+			<h4>.text-center</h4>
+			<p>This aligns the text to be center.</p>
+		</div>
+		<h3 class=" subtitle text-left">Alignment Utilities</h3>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.align.vertical</h4>
+				<p>This classes will align any element vertically. The only but is that its parent has to have a height.</p>
+			</div>
+			<div class="col-6">
+				<div class="example-col text-left">
+					<div class="align vertical">
+						<h4>I'm centered!</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.align-flex.vertical</h4>
+				<p>This classes will center any element vertically using flex, the only constrain is that you have to apply it to the elements' parent, not to the element itself.</p>
+			</div>
+			<div class="col-6">
+				<div class="example-col align-flex center">
+					<h4>Hi, I'm centered because of my parent!</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.align-flex.center</h4>
+				<p>This class will center any element vertically and horizontally using flex, the only constrain is that you have to apply it to the elements' parent, not to the element itself.</p>
+			</div>
+			<div class="col-6">
+				<div class="example-col align-flex center">
+					<h4>Hi, I'm centered because of my parent!</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.align-flex.between</h4>
+				<p>This class will give the same amount of space to each element using flex, the only constrain is that you have to apply it to the elements' parent.</p>
+			</div>
+			<div class="col-6">
+				<div class="example-col align-flex vertical between">
+					<h4>Hello</h4>
+					<h4>it's</h4>
+					<h4>me</h4>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="subtitle text-left">Display Utilities</h3>
+		<div class="row text-left">
+			<div class="col-4">
+				<h4>.display-block</h4>
+				<p>This class will add its name to the element.</p>
+			</div>
+			<div class="col-4">
+				<h4>.display-inline</h4>
+				<p>This class will add its name to the element.</p>
+			</div>
+			<div class="col-4">
+				<h4>.display-inline-block</h4>
+				<p>This class will add its name to the element.</p>
+			</div>
+		</div>
+		<div class="row text-left">
+			<div class="col-4">
+				<h4>.display-flex</h4>
+				<p>This class will add its name to the element.</p>
+			</div>
+			<div class="col-4">
+				<h4>.display-inline-flex</h4>
+				<p>This class will add its name to the element.</p>
+			</div>
+			<div class="col-4">
+				<h4>.display-table</h4>
+				<p>This class will add its name to the element.</p>
+			</div>
+		</div>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.display-none</h4>
+				<p>This class will add its name to the element.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="media-queries" id="media-queries">
+		<h3 class="title">Media Queries</h3>
+		<p>We have provided a set of helpful media query mixins with really cool names. Kudos to Rafal Bromirski. We have one for Mobile and Tablet so it's easier for you to manage those screens.</p>
+
+		<div class="row">
+			<div class="col-6">
+				<h3 class="subtitle text-left">Example of Mobile Full media</h3>
+				<div class="example-col text-left">
+					<h4>
+						@media only screen and (min-width: 320px) and (max-width: 480px) { <br>
+							<span>//Your set of rules</span> <br>
+						}
+					</h4>
+				</div>
+			</div>
+			<div class="col-6">
+				<h3 class="subtitle text-left">Our Mobile mixin</h3>
+				<h6 class="text-left">This applies when you have 768px of width.</h6>
+				<div class="example-col text-left">
+					<h4>
+						.class-name { <br>
+  							<span>//Regular css rules</span> <br>
+  						<br>
+			    		<span>@include breakpoint(s) { </span><br>
+			      	<span>//Your awesome responsive rules. Cool isn't it?</span> <br>
+			    		<span>}</span> <br>
+						}
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<h3 class="subtitle text-left">Our Tablet mixin</h3>
+				<h6 class="text-left">This applies when you have 1024px of width.</h6>
+				<div class="example-col text-left">
+					<h4>
+						.class-name { <br>
+  							<span>//Regular css rules</span> <br>
+  						<br>
+			    		<span>@include breakpoint(m) { </span><br>
+			      	<span>//Your awesome responsive rules. Cool isn't it?</span> <br>
+			    		<span>}</span> <br>
+						}
+					</h4>
+				</div>
+			</div>
+
+			<div class="col-6">
+				<h3 class="subtitle text-left">Our Laptop mixin</h3>
+				<h6 class="text-left">This applies when you have 1140px of width.</h6>
+				<div class="example-col text-left">
+					<h4>
+						.class-name { <br>
+  							<span>//Regular css rules</span> <br>
+  						<br>
+			    		<span>@include breakpoint(l) { </span><br>
+			      	<span>//Your awesome responsive rules. Cool isn't it?</span> <br>
+			    		<span>}</span> <br>
+						}
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<h3 class="subtitle text-left">Our Desktop mixin</h3>
+				<h6 class="text-left">This applies when you have 4096px of width.</h6>
+				<div class="example-col text-left">
+					<h4>
+						.class-name { <br>
+  							<span>//Regular css rules</span> <br>
+  						<br>
+			    		<span>@include breakpoint(w) { </span><br>
+			      	<span>//Your awesome responsive rules. Cool isn't it?</span> <br>
+			    		<span>}</span> <br>
+						}
+					</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="responsive" id="responsive">
+		<h3 class="title">Responsive</h3>
+		<p>We made some class names to make it more easy for you to manage the responsive part, with them you can show or hide content on small, medium or large devices.</p>
+
+		<div class="row">
+			<h3 class="subtitle text-left">Visibility</h3>
+			<table class="text-left">
+			  <tr>
+			  	<th></th>
+			    <th class="bold">Width &lt; 768px</th>
+			    <th class="bold">Width &lt; 1024px</th>
+			    <th class="bold">Width &lt; 1140px</th>
+			    <th class="bold">Width &gt; 4096px</th>
+			  </tr>
+			  <tr>
+			    <td class="bold">show-on-s</td>
+			    <td>Visible</td>
+			    <td>Hidden</td>
+			    <td>Hidden</td>
+			    <td>Hidden</td>
+			  </tr>
+			  <tr>
+			    <td class="bold">show-on-m</td>
+			    <td>Hidden</td>
+			    <td>Visible</td>
+			    <td>Hidden</td>
+			    <td>Hidden</td>
+			  </tr>
+			  <tr>
+			    <td class="bold">show-on-l</td>
+			    <td>Hidden</td>
+			    <td>Hidden</td>
+			    <td>Visible</td>
+			    <td>Hidden</td>
+			  </tr>
+			  <tr>
+			    <td class="bold">show-on-w</td>
+			    <td>Hidden</td>
+			    <td>Hidden</td>
+			    <td>Hidden</td>
+			    <td>Visible</td>
+			  </tr>
+			  <tr>
+			    <td class="bold">hide-on-s-only</td>
+			   	<td>Hidden</td>
+			    <td>Visible</td>
+			    <td>Visible</td>
+			    <td>Visible</td>
+			  </tr>
+			  <tr>
+			    <td class="bold">hide-on-m-only</td>
+			    <td>Visible</td>
+			    <td>Hidden</td>
+			    <td>Visible</td>
+			    <td>Visible</td>
+			  </tr>
+			  <tr>
+			    <td class="bold">hide-on-l-only</td>
+			    <td>Visible</td>
+			    <td>Visible</td>
+			    <td>Hidden</td>
+			    <td>Visible</td>
+			  </tr>
+			  <tr>
+			    <td class="bold">hide-on-w-only</td>
+			    <td>Visible</td>
+			    <td>Visible</td>
+			    <td>Visible</td>
+			    <td>Hidden</td>
+			  </tr>
+			</table>
+		</div>
+		<h3 class="subtitle text-left">Hiding elements</h3>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.hide-on-s</h4>
+				<p>This class hides the element when it reaches 768px.</p>
+			</div>
+			<div class="col-6">
+				<h4>.hide-on-m</h4>
+				<p>This class hides the element when it reaches 1024px.</p>
+			</div>
+		</div>
+		<div class="row text-left">
+			<div class="col-6">
+				<h4>.hide-on-l</h4>
+				<p>This class hides the element when it reaches 1140px.</p>
+			</div>
+			<div class="col-6">
+				<h4>.hide-on-w</h4>
+				<p>This class hides the element when it reaches 4096px.</p>
+			</div>
+		</div>
+	</section>
+	<section class="download" id="download">
+		<h3 class="title">Do you like what you see?</h3>
+		<a href="https://github.com/IcaliaLabs/alom" class="btn" target="_blank">Download it</a>
+	</section>
+</div>
